@@ -58,6 +58,7 @@
   height: var(--size-xl);
   width: var(--size-xl);
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .footer__container2 {
