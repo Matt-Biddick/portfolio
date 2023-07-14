@@ -8,6 +8,10 @@
   margin-top: 2rem;
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__img {
   border-radius: 50%;
   width: 6rem;
@@ -37,6 +41,15 @@
 .hero__btn {
   text-transform: capitalize;
   font-size: var(--size-sm);
+}
+
+.background__image-passionflower {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  max-height: 75%;
+  filter: grayscale(100%) opacity(0.3);
+  transform: rotate(45deg);
 }
 
 /* xs */

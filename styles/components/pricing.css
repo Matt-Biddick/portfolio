@@ -26,9 +26,10 @@
   flex-direction: column;
   border-radius: 10px;
   min-width: 230px;
-  background-color: rgb(15, 23, 42);
+  background-color: var(--clr-divFill);
   border: solid 2px var(--clr-rose);
   text-align: left;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .pricing__box-topsection {
@@ -55,7 +56,7 @@
   transform: translateX(-50%);
   font-size: var(--size-sm);
   background-color: var(--clr-rose);
-  color: var(--clr-light);
+  color: white;
   font-style: italic;
   padding: 3px 15px;
   border-radius: 20px;
@@ -72,6 +73,7 @@
   font-size: var(--size-3xl);
   margin: 1rem;
   margin-top: 0;
+  color: var(--clr-light);
 }
 
 .currency-select select {
@@ -81,7 +83,7 @@
   color: var(--clr-light);
   border: 2px solid var(--clr-rose);
   border-radius: 10px;
-  background-color: rgb(15, 23, 42);
+  background-color: var(--clr-divFill);
 }
 
 .currency-select select:focus {
@@ -91,12 +93,14 @@
 
 .pricing__box-description {
   margin: 0 15px;
+  color: var(--clr-light);
 }
 
 .pricing__list {
   padding: 0;
   margin: 20px;
   list-style-type: none;
+  color: var(--clr-light);
 }
 
 .pricing__list-item-excluded {
@@ -153,15 +157,26 @@
   flex-wrap: wrap;
   border: solid 1px var(--clr-rose);
   border-radius: 10px;
-  background-color: rgb(15, 23, 42);
+  background-color: var(--clr-divFill);
   min-width: 400px;
   padding: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .testimonials__box-credentials-wrapper {
   width: 50%;
   margin-right: auto;
   flex: 1;
+}
+
+.testimonials__box-name {
+  font-size: var(--size-base);
+  text-transform: capitalize;
+  color: var(--clr-light);
+}
+
+.testimonials__box-role {
+  color: var(--clr-light);
 }
 
 .testimonials__box-date-wrapper {
@@ -171,21 +186,20 @@
   flex: 1;
 }
 
+.testimonials__box-date {
+  color: var(--clr-light);
+}
+
 .testimonials__box-testimonial-wrapper {
   margin-top: 20px;
 }
 
-.testimonials__box-name {
-  font-size: var(--size-base);
-  text-transform: capitalize;
+.testimonials__box-testimonial {
+  color: var(--clr-light);
 }
 
 .testimonials__box-stars::before {
   content: "\2B50 \2B50 \2B50 \2B50 \2B50";
-}
-
-.testimonials__box-date {
-  color: var(--clr-slate400);
 }
 
 .faq__header {
