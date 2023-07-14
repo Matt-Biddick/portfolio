@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="header__resume btn"
+              href="https://1drv.ms/b/s!AqXl1EGJakPuhIUHUWfjcJ-B3DbHqA?e=9ABZxb"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="mobile-nav__button btn"
+              href="https://1drv.ms/b/s!AqXl1EGJakPuhIUHUWfjcJ-B3DbHqA?e=9ABZxb"
+              target="_blank"
+            >
+              Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pricing container">
+      <h2 class="pricing__title">Simple, straight forward pricing.</h2>
+      <div class="currency-select">
+        <label for="currency">Currency:</label>
+        <select id="currency">
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="CHF">CHF</option>
+          <option value="USD">USD</option>
+          <option value="NZD">NZD</option>
+          <option value="AUD">AUD</option>
+        </select>
+      </div>
+      <div class="pricing__container container">
+        <!-- Basic Package -->
+        <div class="pricing__box">
+          <div class="pricing__box-topsection">
+            <h3 class="pricing__box-title">Basic</h3>
+            <h2 class="pricing__box-price price" data-location="location1">
+              $349
+            </h2>
+            <p class="pricing__box-description">
+              <b>For projects at the write-up stage</b>
+            </p>
+          </div>
+          <div class="pricing__box-middlesection">
+            <ul class="pricing__list">
+              <li class="pricing__list-item-included">
+                Two video conference calls
+              </li>
+              <li class="pricing__list-item-included">Full manuscript plan</li>
+              <li class="pricing__list-item-included">
+                Pre-submission review & editing
+              </li>
+              <li class="pricing__list-item-excluded">
+                Data analytics consult
+              </li>
+              <li class="pricing__list-item-excluded">
+                Pre-submission code review
+              </li>
+              <li class="pricing__list-item-excluded">
+                Journal revision guidance
+              </li>
+            </ul>
+          </div>
+          <div class="pricing__box-bottomsection">
+            <a class="btn pricing__button" href="/">Select Package</a>
+          </div>
+        </div>
+        <!-- Premium Package -->
+        <div class="pricing__box">
+          <div class="pricing__box-topsection">
+            <div class="popular">Most popular</div>
+            <h3 class="pricing__box-title">Premium</h3>
+            <h2 class="pricing__box-price price" data-location="location2">
+              $599
+            </h2>
+            <p class="pricing__box-description">
+              <b>Basic package + data analytics</b>
+            </p>
+          </div>
+          <div class="pricing__box-middlesection">
+            <ul class="pricing__list">
+              <li class="pricing__list-item-included">
+                Three video conference calls
+              </li>
+              <li class="pricing__list-item-included">Full manuscript plan</li>
+              <li class="pricing__list-item-included">
+                Pre-submission review & editing
+              </li>
+              <li class="pricing__list-item-included">
+                Data analytics consult
+              </li>
+              <li class="pricing__list-item-excluded">
+                Pre-submission code review
+              </li>
+              <li class="pricing__list-item-excluded">
+                Journal revision guidance
+              </li>
+            </ul>
+            <div class="pricing__box-bottomsection">
+              <a class="btn pricing__button" href="/">Select Package</a>
+            </div>
+          </div>
+        </div>
+        <!-- Pro Package -->
+        <div class="pricing__box">
+          <div class="pricing__box-topsection">
+            <h3 class="pricing__box-title">Pro</h3>
+            <h2 class="pricing__box-price price" data-location="location3">
+              $1249
+            </h2>
+            <p class="pricing__box-description">
+              <b>Comprehensive guidance</b>
+            </p>
+          </div>
+          <div class="pricing__box-middlesection">
+            <ul class="pricing__list">
+              <li class="pricing__list-item-included">
+                Unlimited conference calls*
+              </li>
+              <li class="pricing__list-item-included">Full manuscript plan</li>
+              <li class="pricing__list-item-included">
+                Ongoing review & editing
+              </li>
+              <li class="pricing__list-item-included">
+                Data analytics consult
+              </li>
+              <li class="pricing__list-item-included">
+                Pre-submission code review
+              </li>
+              <li class="pricing__list-item-included">
+                Journal revision guidance
+              </li>
+            </ul>
+            <!-- <p class="pricing__box-disclaimer">* Subject to availability</p> -->
+          </div>
+          <div class="pricing__box-bottomsection">
+            <a class="btn pricing__button" href="/">Select Package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials Section -->
+    <section class="testimonials container section">
+      <h1 class="testimonials__header">
+        <a>Your</a> hard work. In <a>trusted</a> hands.
+      </h1>
+      <div class="testimonials__container container">
+        <div class="testimonials__box">
+          <div class="testimonials__box-credentials-wrapper">
+            <h3 class="testimonials__box-name">Dr. Julia Schmack</h3>
+            <p class="testimonials__box-role">Postdoctoral Researcher</p>
+          </div>
+          <div class="testimonials__box-date-wrapper">
+            <p class="testimonials__box-stars"></p>
+            <p class="testimonials__box-date">20/03/2023</p>
+          </div>
+          <div class="testimonials__box-testimonial-wrapper">
+            <p class="testimonials__box-testimonial">
+              "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi
+              euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat"
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__box">
+          <div class="testimonials__box-credentials-wrapper">
+            <h3 class="testimonials__box-name">Holly B.</h3>
+            <p class="testimonials__box-role">PhD Candidate</p>
+          </div>
+          <div class="testimonials__box-date-wrapper">
+            <p class="testimonials__box-stars"></p>
+            <p class="testimonials__box-date">20/03/2023</p>
+          </div>
+          <div class="testimonials__box-testimonial-wrapper">
+            <p class="testimonials__box-testimonial">
+              "Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec
+              consectetuer ligula vulputate sem tristique cursus. Nam nulla quam
+              gravida non commodo a sodales sit amet nisi."
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__box">
+          <div class="testimonials__box-credentials-wrapper">
+            <h3 class="testimonials__box-name">Michael N.</h3>
+            <p class="testimonials__box-role">Senior Scientist</p>
+          </div>
+          <div class="testimonials__box-date-wrapper">
+            <p class="testimonials__box-stars"></p>
+            <p class="testimonials__box-date">20/03/2023</p>
+          </div>
+          <div class="testimonials__box-testimonial-wrapper">
+            <p class="testimonials__box-testimonial">
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
+              turpis. Suspendisse urna nibh viverra non semper suscipit posuere
+              a pede."
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__box">
+          <div class="testimonials__box-credentials-wrapper">
+            <h3 class="testimonials__box-name">Susan W.</h3>
+            <p class="testimonials__box-role">Research Associate</p>
+          </div>
+          <div class="testimonials__box-date-wrapper">
+            <p class="testimonials__box-stars"></p>
+            <p class="testimonials__box-date">20/03/2023</p>
+          </div>
+          <div class="testimonials__box-testimonial-wrapper">
+            <p class="testimonials__box-testimonial">
+              "Praesent dapibus neque id cursus faucibus tortor neque egestas
+              auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+              dui mi tincidunt quis accumsan porttitor facilisis luctus metus."
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__box">
+          <div class="testimonials__box-credentials-wrapper">
+            <h3 class="testimonials__box-name">Kevin G.</h3>
+            <p class="testimonials__box-role">Master Student</p>
+          </div>
+          <div class="testimonials__box-date-wrapper">
+            <p class="testimonials__box-stars"></p>
+            <p class="testimonials__box-date">20/03/2023</p>
+          </div>
+          <div class="testimonials__box-testimonial-wrapper">
+            <p class="testimonials__box-testimonial">
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
+              turpis. Suspendisse urna nibh viverra non semper suscipit posuere
+              a pede."
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__box">
+          <div class="testimonials__box-credentials-wrapper">
+            <h3 class="testimonials__box-name">John W.</h3>
+            <p class="testimonials__box-role">Director of iScience</p>
+          </div>
+          <div class="testimonials__box-date-wrapper">
+            <p class="testimonials__box-stars"></p>
+            <p class="testimonials__box-date">20/03/2023</p>
+          </div>
+          <div class="testimonials__box-testimonial-wrapper">
+            <p class="testimonials__box-testimonial">
+              "Praesent dapibus neque id cursus faucibus tortor neque egestas
+              auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+              dui mi tincidunt quis accumsan porttitor facilisis luctus metus."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq section">
+      <h1 class="faq__header">
+        Got <a>questions?</a> We've got <a>answers.</a>
+      </h1>
+      <div class="faq__section">
+        <div class="faq__section-item">
+          <div class="faq__question-container">
+            <div class="faq__section-question">
+              Question 1 Question 1 Question 1 Question 1 Question 1 Question 1?
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="faq__question-icon"
+            >
+              <path
+                class="plus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                class="minus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="faq__section-answer">
+            Praesent dapibus neque id cursus faucibus tortor neque egestas
+            auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+            dui mi tincidunt quis accumsan porttitor facilisis luctus metus.<br />
+            <br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
+            turpis. Suspendisse urna nibh viverra non semper suscipit posuere a
+            pede.
+          </div>
+        </div>
+        <div class="faq__section-item">
+          <div class="faq__question-container">
+            <div class="faq__section-question">
+              Question 2 Question 2 Question 2 Question 2?
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="faq__question-icon"
+            >
+              <path
+                class="plus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                class="minus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="faq__section-answer">
+            Praesent dapibus neque id cursus faucibus tortor neque egestas
+            auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+            dui mi tincidunt quis accumsan porttitor facilisis luctus metus.
+          </div>
+        </div>
+        <div class="faq__section-item">
+          <div class="faq__question-container">
+            <div class="faq__section-question">
+              Question 3 Question 3 Question 3 Question 3 Question 3?
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="faq__question-icon"
+            >
+              <path
+                class="plus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                class="minus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="faq__section-answer">
+            Praesent dapibus neque id cursus faucibus tortor neque egestas
+            auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+            dui mi tincidunt quis accumsan porttitor facilisis luctus metus.
+          </div>
+        </div>
+        <div class="faq__section-item">
+          <div class="faq__question-container">
+            <div class="faq__section-question">
+              Question 3 Question 3 Question 3 Question 3 Question 3?
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="faq__question-icon"
+            >
+              <path
+                class="plus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                class="minus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="faq__section-answer">
+            Praesent dapibus neque id cursus faucibus tortor neque egestas
+            auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+            dui mi tincidunt quis accumsan porttitor facilisis luctus metus.
+          </div>
+        </div>
+        <div class="faq__section-item">
+          <div class="faq__question-container">
+            <div class="faq__section-question">
+              Question 3 Question 3 Question 3 Question 3 Question 3?
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="faq__question-icon"
+            >
+              <path
+                class="plus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                class="minus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="faq__section-answer">
+            Praesent dapibus neque id cursus faucibus tortor neque egestas
+            auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+            dui mi tincidunt quis accumsan porttitor facilisis luctus metus.
+          </div>
+        </div>
+        <div class="faq__section-item">
+          <div class="faq__question-container">
+            <div class="faq__section-question">
+              Question 3 Question 3 Question 3 Question 3 Question 3?
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="faq__question-icon"
+            >
+              <path
+                class="plus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+              <path
+                class="minus-icon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="faq__section-answer">
+            Praesent dapibus neque id cursus faucibus tortor neque egestas
+            auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam
+            dui mi tincidunt quis accumsan porttitor facilisis luctus metus.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Built by Matt Biddick ~</h3>
+    </footer>
+    <script type="module" src="./src/pricing.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".faq__question-container").on("click", function () {
+          var $answer = $(this).next(".faq__section-answer");
+          $answer.slideToggle();
+          $(this).toggleClass("active");
+          $(this).toggleClass("open");
+
+          var $plusIcon = $(this).find(".plus-icon");
+          var $minusIcon = $(this).find(".minus-icon");
+          $plusIcon.toggleClass("hide");
+          $minusIcon.toggleClass("hide");
+        });
+      });
+    </script>
+  </body>
+</html>
