@@ -8,7 +8,7 @@
 
 .footer__fern {
   position: absolute;
-  left: 0;
+  left: 2%;
   bottom: 0;
   max-height: 98%;
   width: auto;
@@ -46,7 +46,7 @@
 }
 
 .footer__container1-bin-item:first-child {
-  color: var(--clr-slate400);
+  color: slategray;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -67,7 +67,7 @@
 .footer__signature {
   font-size: var(--size-xs);
   font-weight: 400;
-  color: var(--clr-slate400);
+  color: slategray;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
