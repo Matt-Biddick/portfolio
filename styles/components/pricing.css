@@ -37,7 +37,15 @@
 }
 
 .pricing__box-middlesection {
+  position: relative;
   flex: 1;
+}
+
+.pricing__box-disclaimer {
+  position: absolute;
+  bottom: -1;
+  left: 12%;
+  font-size: var(--size-xs);
 }
 
 .pricing__box-bottomsection {
@@ -122,11 +130,6 @@
   content: "\2718";
   color: red;
   margin-right: 8px;
-}
-
-.pricing__box-disclaimer {
-  font-size: var(--size-xs);
-  margin: 20px;
 }
 
 .pricing__button {
