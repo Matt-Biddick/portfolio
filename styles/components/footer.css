@@ -43,14 +43,20 @@
 
 .footer__container1-bin-link {
   color: white;
+  text-decoration: none;
 }
 
 .footer__container1-bin-item:first-child {
-  color: slategray;
+  color: white;
+  font-weight: 500;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: var(--size-base);
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
 }
 
 .footer__icon {
@@ -61,8 +67,19 @@
   cursor: pointer;
 }
 
+.footer__icon:hover {
+  filter: opacity(50%);
+}
+
 .footer__container2 {
   margin-bottom: 10px;
+}
+
+.footer__copyright {
+  color: white;
+  font-size: var(--size-sm);
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .footer__signature {

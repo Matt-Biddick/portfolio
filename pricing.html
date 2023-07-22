@@ -591,10 +591,21 @@
           </div>
         </div>
       </div>
-      <h2 class="faq__closer">Still unsure?</h2>
-      <h3 class="faq__closer-subcloser">
-        Book a <strong>free</strong> consultation call today!
-      </h3>
+      <div class="consultation__container section">
+        <h2 class="consultation__header">Still unsure?</h2>
+        <h3 class="consultation__subheader">
+          Book a <strong>free</strong> consultation call today!
+        </h3>
+        <form id="consultation__form">
+          <input
+            type="email"
+            id="consultation__form-input"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </section>
     <footer class="footer section">
       <img class="footer__fern" src="/fern-footer.png" alt="Footer fern" />
@@ -686,8 +697,10 @@
         </div>
         <div class="footer__container1-bin">
           <li class="footer__container1-bin-item">Resources</li>
-          <li class="footer__container1-bin-item">Terms of Use</li>
-          <li class="footer__container1-bin-item">
+          <li class="footer__container1-bin-item underline-on-hover">
+            <a class="footer__container1-bin-link" href="#"> Terms of Use </a>
+          </li>
+          <li class="footer__container1-bin-item underline-on-hover">
             <a
               class="footer__container1-bin-link"
               href="https://1drv.ms/b/s!AqXl1EGJakPuhIYJUcFvhvqjfvR9-A?e=7Fprll"
@@ -697,6 +710,9 @@
         </div>
       </div>
       <div class="footer__container2">
+        <p class="footer__copyright">
+          © 2023 Claves Publishing Ltd. All rights reserved.
+        </p>
         <h3 class="footer__signature">~ Built by Matt Biddick ~</h3>
       </div>
     </footer>

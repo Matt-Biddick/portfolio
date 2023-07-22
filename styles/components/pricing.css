@@ -257,6 +257,53 @@
   display: block;
 }
 
+.consultation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consultation__header {
+  text-align: center;
+  color: var(--clr-light);
+  font-size: var(--size-5xl);
+}
+
+.consultation__subheader {
+  text-align: center;
+  color: var(--clr-light);
+  font-size: var(--size-2xl);
+}
+
+#consultation__form {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+#consultation__form-input {
+  padding: 10px;
+  width: 250px;
+}
+
+#consultation__form-input:focus {
+  outline: none;
+}
+
+#consultation__form input[type="submit"] {
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  padding: 12px 20px;
+  background-color: var(--clr-rose);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
 /* xs */
 /* @media (min-width: 475px) {
   
