@@ -68,29 +68,3 @@ currencySelect.addEventListener("change", updatePrices);
 
 // Update the prices initially
 updatePrices();
-
-document
-  .getElementById("consultation__form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Get email input
-    var email = document.getElementById("consultation__form-input").value;
-
-    // Validate email address
-    if (!validateEmail(email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
-
-    // Perform further actions with the email value
-    // For example, send it to a server using AJAX or perform client-side validation
-
-    alert("Email submitted successfully!");
-  });
-
-// Validate email address using a regular expression
-function validateEmail(email) {
-  var regularExpression = /\S+@\S+\.\S+/;
-  return regularExpression.test(email);
-}
