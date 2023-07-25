@@ -2,14 +2,6 @@
   position: relative;
 }
 
-.background__image-dodobird {
-  position: absolute;
-  bottom: 54%;
-  right: 0;
-  max-height: 42%;
-  filter: invert(50%) opacity(0.3);
-}
-
 .featured__title {
   font-size: var(--size-2xl);
   color: var(--clr-light);
@@ -42,9 +34,15 @@
 }
 
 .featured__info-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.background__image-dodobird {
+  display: none;
+  position: absolute;
 }
 
 .featured__info-container div {
@@ -159,6 +157,16 @@
 
   .featured__description {
     font-size: var(--size-lg);
+  }
+
+  .background__image-dodobird {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 38vw;
+    width: auto;
+    filter: invert(50%) opacity(0.3);
   }
 
   .featured__label {

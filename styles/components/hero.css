@@ -47,7 +47,7 @@
   position: absolute;
   top: 10%;
   left: 0;
-  max-height: 75%;
+  max-height: 40vw;
   filter: grayscale(100%) opacity(0.3);
   transform: rotate(45deg);
 }
