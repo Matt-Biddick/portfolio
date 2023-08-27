@@ -21,6 +21,10 @@
   color: var(--clr-slate400);
 }
 
+.quote {
+  font-style: italic;
+}
+
 .about__hr {
   border-color: var(--clr-slate400);
 }
